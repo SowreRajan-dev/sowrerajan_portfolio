@@ -7,7 +7,7 @@ const AboutMe = () => {
         <h2 className="font-Nunito font-bold text-[2rem] ">
           Hello, I'm Sowrerajan 🤙
         </h2>
-        <p className="text-center text-[1.5rem] p-10 font-Poppins">
+        <p className="text-center text-[1.5rem] p-10 font-Poppins xl:text-[2rem] break-words ">
           I am a{" "}
           <b className="text-transparent bg-clip-text bg-gradient-to-br from-[#40c4ff] to-[#189fff]">
             Full Stack Web developer
