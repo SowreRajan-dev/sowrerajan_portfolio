@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./Components/About";
 import AboutMe from "./Components/AboutMe";
 import Navbar from "./Components/Navbar";
 import ProjectsDisplay from "./Components/ProjectsDisplay";
@@ -12,6 +13,9 @@ function App() {
       </div>
       <div className="mt-20 w-full ">
         <ProjectsDisplay />
+      </div>
+      <div className="">
+        <About />
       </div>
     </div>
   );

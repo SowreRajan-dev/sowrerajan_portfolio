@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../Assests/sowrerajan-logo.png";
 const Navbar = () => {
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
+    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-10">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div className="flex items-center w-40 ">
           <img src={logo} className="w-full h-20" alt="logo" />
