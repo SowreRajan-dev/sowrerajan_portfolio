@@ -3,7 +3,7 @@ import aboutArrow from "../Assests/Vectors/Vector_1.png";
 import SkillsSection from "./SkillsSection";
 const About = () => {
   return (
-    <div className="p-10  w-[50%]">
+    <div className="p-10  ">
       <div>
         <div className="relative">
           <p className="font-Poppins text-[2.5rem] font-bold">About Me</p>
