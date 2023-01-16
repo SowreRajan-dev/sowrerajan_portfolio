@@ -7,90 +7,118 @@ const SkillsSection = () => {
         <p className="font-Poppins text-[2.5rem] font-bold">Skills</p>
       </div>
       <div className="p-10 flex items-start flex-wrap justify-evenly gap-[5rem] ">
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#0f3b4e] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.reactImg} alt="react" />
+        <a href="https://reactjs.org/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#0f3b4e] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.reactImg} alt="react" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              React
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            React
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#899aa1] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.nextjsImg} alt="nextjs" className="w-[80%]" />
+        </a>
+        <a href="https://nextjs.org/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#899aa1] rounded-3xl flex items-center justify-center ">
+              <img
+                src={skillImages.nextjsImg}
+                alt="nextjs"
+                className="w-[80%]"
+              />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              Next JS
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            Next JS
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#1f3f2a] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.nodejsImg} alt="nodejs" className="w-[70%]" />
+        </a>
+        <a href="https://nodejs.org/en/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#1f3f2a] rounded-3xl flex items-center justify-center ">
+              <img
+                src={skillImages.nodejsImg}
+                alt="nodejs"
+                className="w-[70%]"
+              />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              Node JS
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            Node JS
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#c0cac6be] rounded-3xl flex items-center justify-center ">
-            <img
-              src={skillImages.expressImg}
-              alt="expressjs"
-              className="w-[80%]"
-            />
+        </a>
+        <a href="https://expressjs.com/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#c0cac6be] rounded-3xl flex items-center justify-center ">
+              <img
+                src={skillImages.expressImg}
+                alt="expressjs"
+                className="w-[80%]"
+              />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              Express JS
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            Express JS
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#062735] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.pythonImg} alt="python" />
+        </a>
+        <a href="https://www.python.org/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#062735] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.pythonImg} alt="python" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              Python
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            Python
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#02e2e2] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.mysqlImg} alt="mysql" />
+        </a>
+        <a href="https://www.mysql.com/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#02e2e2] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.mysqlImg} alt="mysql" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              MySQL
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            MySQL
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#095a4f] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.mongodbImg} alt="mongodb" />
+        </a>
+        <a href="https://www.mongodb.com/">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#095a4f] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.mongodbImg} alt="mongodb" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              Mongo DB
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            Mongo DB
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#ac0404] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.html5Img} alt="html5" className="w-[60%]" />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#ac0404] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.html5Img} alt="html5" className="w-[60%]" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              HTML 5{" "}
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            HTML 5{" "}
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#01505e] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.cssImg} alt="css" className="w-[70%]" />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#01505e] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.cssImg} alt="css" className="w-[70%]" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              CSS{" "}
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            CSS{" "}
-          </p>
-        </div>
-        <div className="w-32 h-32">
-          <div className="w-full h-full bg-[#0f3b4e] rounded-3xl flex items-center justify-center ">
-            <img src={skillImages.jsImg} alt="react" />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+          <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
+            <div className="w-full h-full bg-[#0f3b4e] rounded-3xl flex items-center justify-center ">
+              <img src={skillImages.jsImg} alt="react" />
+            </div>
+            <p className="text-center font-Poppins font-[500] text-[1.5rem] skills-text">
+              JavaScript{" "}
+            </p>
           </div>
-          <p className="text-center font-Poppins font-[500] text-[1.5rem]">
-            JavaScript{" "}
-          </p>
-        </div>
+        </a>
       </div>
     </div>
   );
