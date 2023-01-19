@@ -12,7 +12,7 @@ function App() {
       <div className="flex items-center justify-center flex-col">
         <AboutMe />
       </div>
-      <div className="mt-20 w-full ">
+      <div className="m-20 ">
         <ProjectsDisplay />
       </div>
       <div className="">

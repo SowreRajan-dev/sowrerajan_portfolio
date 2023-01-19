@@ -43,6 +43,8 @@ module.exports = {
 
       "2xl": { min: "1536px" },
       // => @media (min-width: 1536px) { ... }
+      mmd: { max: "768px" },
+      msm: { max: "640px" },
     },
   },
   plugins: [],

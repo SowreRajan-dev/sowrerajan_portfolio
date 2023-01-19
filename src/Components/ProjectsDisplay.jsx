@@ -1,28 +1,67 @@
 import React, { useState } from "react";
+import HoverVideoPlayer from "react-hover-video-player";
 import { AiFillGithub } from "react-icons/ai";
 import { projects } from "../data/projects";
 
-function ProjectDetails({ project }) {
+function ProjectDetails({ project, setClickFunction }) {
   return (
     <div
-      className={` h-[100%] rounded-md`}
+      className={`rounded-md p-10 relative mmd:p-5 transition-all duration-75 `}
       style={{ background: project.image_bg }}
     >
-      <p className="font-Nunito text-[32px] text-center text-white">
+      <div
+        className="text-white absolute right-10 top-5 cursor-pointer mmd:right-5"
+        onClick={() => setClickFunction(false)}
+      >
+        <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>{" "}
+      </div>
+      <p
+        className="font-Nunito text-[32px] text-center "
+        style={{ color: project.text_color }}
+      >
         {project.project_name}
       </p>
-      <div className="flex items-center justify-center h-[100%]">
-        <div className=" h-[100%] p-10 flex-1">
-          <img
-            src={project.imageSrc}
-            className={`${
-              project.id === 3 ? "w-[50%]" : "w-[80%]"
-            } shadow-xl shadow-current rounded-md`}
-            alt={project.project_name}
+      <div className="flex items-center justify-center h-[100%]  mmd:flex-col ">
+        <div className="p-10 flex-1 mmd:w-full mmd:h-full mmd:p-0">
+          <HoverVideoPlayer
+            videoSrc={project.videoSrc}
+            className=""
+            sizingMode="video"
+            pausedOverlay={
+              <img
+                src={project.imageSrc}
+                alt={project.project_name}
+                style={{
+                  // Make the image expand to cover the video's dimensions
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+            }
           />
         </div>
-        <div className="flex-1 text-white break-before-norma p-10">
-          <p>{project.description}</p>
+        <div className={`flex-1  w-full    p-10 `}>
+          <p
+            className="break-before-auto font-Poppins text-xl"
+            style={{ color: project?.text_color }}
+          >
+            {project.description}
+          </p>
         </div>
       </div>
     </div>
@@ -30,11 +69,16 @@ function ProjectDetails({ project }) {
 }
 
 function ProjectsDisplay() {
-  const [projectHovered, setProjectHovered] = useState(false);
+  const [projectClicked, setProjectClicked] = useState(false);
   const [currentProject, setCurrentProject] = useState([]);
-  function onMouseEnter(project) {
-    setProjectHovered(true);
+
+  function onProjectClicked(project) {
+    const scrollProject = document.getElementById("projectBrief");
+    setProjectClicked(true);
     setCurrentProject(project);
+    if (scrollProject) {
+      scrollProject.scrollIntoView({ behaviour: "smooth" });
+    }
   }
   // function onMouseLeave() {
   //   setProjectHovered(false);
@@ -75,7 +119,7 @@ function ProjectsDisplay() {
               </div>
               <div
                 className={`w-full h-[300px]  rounded-md p-5 cursor-pointer  hover:scale-105 transition duration-300 ease-out`}
-                onMouseEnter={() => onMouseEnter(project)}
+                onClick={() => onProjectClicked(project)}
                 style={{
                   background: project.image_bg,
                 }}
@@ -97,16 +141,20 @@ function ProjectsDisplay() {
               </a>
             </div>
           ))}
+          <div className="m-20" id="projectBrief"></div>
         </div>
       </div>
-      {projectHovered && (
-        <div
-          className="w-[100%] h-[450px]  p-10 "
-          id={`project-${currentProject?.id}`}
-        >
-          <ProjectDetails project={currentProject} />
-        </div>
-      )}
+
+      <div className="">
+        {projectClicked && (
+          <div className="p-10 mmd:p-0" id={`project-${currentProject?.id}`}>
+            <ProjectDetails
+              project={currentProject}
+              setClickFunction={setProjectClicked}
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

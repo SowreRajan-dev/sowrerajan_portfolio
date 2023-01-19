@@ -6,8 +6,10 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-10">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <div className="flex items-center w-40 ">
-          <img src={logo} className="w-full h-20" alt="logo" />
+        <div className="flex items-center w-40 cursor-pointer">
+          <a href="/">
+            <img src={logo} className="w-full h-20" alt="logo" />
+          </a>
         </div>
         <button
           data-collapse-toggle="navbar-default"
@@ -26,9 +28,9 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         </button>
