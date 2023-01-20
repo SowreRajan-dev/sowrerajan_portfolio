@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f04c9927.css",
+    "main.js": "/static/js/main.a610b19e.js",
+    "static/media/agri_connect.mp4": "/static/media/agri_connect.f68172cc8bc34159fb0b.mp4",
+    "static/media/hotstar_clone.webm": "/static/media/hotstar_clone.f2df30f5be807e6a9a99.webm",
+    "static/media/ieee_sb.mp4": "/static/media/ieee_sb.af3b65ca25dbda69ca1c.mp4",
+    "static/media/pintrest.mp4": "/static/media/pintrest.953a3f2e48fe1f1ee16a.mp4",
+    "static/media/blog_b.mp4": "/static/media/blog_b.0fe5fefe4d4d6a8613a2.mp4",
+    "static/media/insta_clone.mp4": "/static/media/insta_clone.a7e53d64165ae5c554a0.mp4",
+    "static/media/educhat.webm": "/static/media/educhat.5ccbcd59ab84cc014e68.webm",
+    "static/media/koruki.mp4": "/static/media/koruki.cb03f87e39557c583715.mp4",
+    "static/media/ieee_sb.png": "/static/media/ieee_sb.944204f02dccc8ab9558.png",
+    "static/media/hotstar-clone.png": "/static/media/hotstar-clone.aa55330e6b442454e2e3.png",
+    "static/media/BlogB.png": "/static/media/BlogB.8220294ca3c828be439b.png",
+    "static/media/pinterest_clone.png": "/static/media/pinterest_clone.88fbea693f4d8c007667.png",
+    "static/media/covidstatus.png": "/static/media/covidstatus.efe6d5319fc8794ad36c.png",
+    "static/media/insta_clone.png": "/static/media/insta_clone.3653d85c96b17938631a.png",
+    "static/media/educhat.png": "/static/media/educhat.1dda6e27ad8c6d3ac486.png",
+    "static/media/agriconnect.png": "/static/media/agriconnect.8b79b3b4e56be0963911.png",
+    "static/media/resume-sowrerajan.pdf": "/static/media/resume-sowrerajan.f2ec6de15a4dbae61c66.pdf",
+    "static/media/Koruki.png": "/static/media/Koruki.f7a122df7d73ed9b2542.png",
+    "static/media/html5.png": "/static/media/html5.e859c20bc42014823b15.png",
+    "static/media/react.png": "/static/media/react.80ac6015b52ffc5d8f1c.png",
+    "static/media/mongodb.png": "/static/media/mongodb.d9a5e725e2672e25edc9.png",
+    "static/media/handVector.png": "/static/media/handVector.b883b91d5e85b3f249b3.png",
+    "static/media/sowrerajan-logo.png": "/static/media/sowrerajan-logo.a25c28d9f9a95a762106.png",
+    "static/media/mysql.png": "/static/media/mysql.6e42b2a035b28f240021.png",
+    "static/media/python.png": "/static/media/python.141f12b52bc6f27a2926.png",
+    "static/media/express.png": "/static/media/express.64890b52409726e7c501.png",
+    "static/media/nodejs.png": "/static/media/nodejs.8e341cc00e4ec40c6a27.png",
+    "static/media/css.png": "/static/media/css.67ea893641c86125ebe0.png",
+    "static/media/nextjs.png": "/static/media/nextjs.6db19b31cc0a2f63cff4.png",
+    "index.html": "/index.html",
+    "main.f04c9927.css.map": "/static/css/main.f04c9927.css.map",
+    "main.a610b19e.js.map": "/static/js/main.a610b19e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f04c9927.css",
+    "static/js/main.a610b19e.js"
+  ]
+}
