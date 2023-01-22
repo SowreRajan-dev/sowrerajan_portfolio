@@ -4,7 +4,7 @@ import SkillsSection from "./SkillsSection";
 import HandVector from "../Assests/Vectors/handVector.png";
 const About = () => {
   return (
-    <div className="p-10  " id="about">
+    <div className="p-10 msm:p-5" id="about">
       <div className="flex items-center justify-center">
         <div>
           <div className="relative">

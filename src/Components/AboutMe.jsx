@@ -29,12 +29,12 @@ const AboutMe = () => {
           encourage responsiveness and user experience.
         </p>
       </div>
-      <div className="flex items-center justify-center ">
-        <button className="mr-10 bg-[#111827] text-white w-36 h-10 rounded-full hover:bg-[#467bf7] ">
+      <div className="flex items-center justify-center msm:flex-col ">
+        <button className="mr-10 bg-[#111827] text-white w-36 h-10 rounded-full hover:bg-[#467bf7] msm:mr-0 ">
           <a href="/#contact">Contact</a>
         </button>
-        <div className="flex items-center cursor-pointer">
-          <a href={resume} className="mr-5 hover:text-[#46b0f7]" download>
+        <div className="flex items-center cursor-pointer msm:mt-10">
+          <a href={resume} className="mr-5 hover:text-[#46b0f7] " download>
             Download CV{" "}
           </a>
           <AiOutlineArrowRight />

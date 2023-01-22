@@ -6,7 +6,7 @@ const SkillsSection = () => {
       <div>
         <p className="font-Poppins text-[2.5rem] font-bold">Skills</p>
       </div>
-      <div className="p-10 flex items-start flex-wrap justify-evenly gap-[5rem] ">
+      <div className="p-10 flex items-start flex-wrap justify-evenly gap-[5rem] msm:grid msm:grid-cols-2 msm:p-5">
         <a href="https://reactjs.org/">
           <div className="w-32 h-32 skills-container hover:scale-105 transition-all  ease-in-out">
             <div className="w-full h-full bg-[#0f3b4e] rounded-3xl flex items-center justify-center ">

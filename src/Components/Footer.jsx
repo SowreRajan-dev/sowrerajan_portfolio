@@ -1,14 +1,21 @@
-import React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { BsTwitter, BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Footer() {
   const formRef = useRef();
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!email || !name || !message) {
+      toast.error("Enter the necessary informations!");
+      return;
+    }
     emailjs
       .sendForm(
         process.env.REACT_APP_EmailJS_SERVICEID,
@@ -16,7 +23,12 @@ function Footer() {
         formRef.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
-      .then((res) => {})
+      .then((res) => {
+        toast.success("Sent ✅ ");
+        setEmail("");
+        setName("");
+        setMessage("");
+      })
       .catch((error) => console.log(error));
   };
   return (
@@ -76,6 +88,8 @@ function Footer() {
                 id="name"
                 name="user_name"
                 className="input-field "
+                onChange={(e) => setName(e.target.value)}
+                value={name}
               />
               <label htmlFor="name" className="input-label">
                 Name
@@ -87,6 +101,8 @@ function Footer() {
                 id="email"
                 name="user_email"
                 className="input-field"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
               <label htmlFor="name" className="input-label">
                 Email
@@ -98,6 +114,8 @@ function Footer() {
                 id="message"
                 name="message"
                 className="input-field"
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
               />
               <label htmlFor="name" className="input-label">
                 Message
@@ -109,6 +127,12 @@ function Footer() {
           </button>
         </form>
       </div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        closeOnClick={true}
+        draggable
+      />
     </div>
   );
 }

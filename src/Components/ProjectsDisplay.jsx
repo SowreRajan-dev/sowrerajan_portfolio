@@ -6,7 +6,7 @@ import { projects } from "../data/projects";
 function ProjectDetails({ project, setClickFunction }) {
   return (
     <div
-      className={`rounded-md p-10 relative mmd:p-5 transition-all duration-75 `}
+      className={`rounded-md p-10 relative mmd:p-5 transition-all duration-75 msm:p-3 msm:block `}
       style={{ background: project.image_bg }}
     >
       <div
@@ -55,7 +55,7 @@ function ProjectDetails({ project, setClickFunction }) {
             }
           />
         </div>
-        <div className={`flex-1  w-full    p-10 `}>
+        <div className={`flex-1  w-full    p-10 msm:p-5 `}>
           <p
             className="break-before-auto font-Poppins text-xl"
             style={{ color: project?.text_color }}
@@ -80,21 +80,18 @@ function ProjectsDisplay() {
       scrollProject.scrollIntoView({ behaviour: "smooth" });
     }
   }
-  // function onMouseLeave() {
-  //   setProjectHovered(false);
-  // }
 
   return (
     <div id="projects">
-      <div className="w-full  h-full flex justify-center flex-col p-5 scroll-smooth ">
-        <p className="font-Poppins font-semibold text-[2.5rem] mb-5">
+      <div className="w-full  h-full flex justify-center flex-col p-5 scroll-smooth msm:p-0">
+        <p className="font-Poppins font-semibold text-[2.5rem] mb-5 ">
           Latest projects
         </p>
-        <div className="flex items-center justify-evenly flex-wrap gap-[5rem]">
+        <div className="flex items-center justify-evenly flex-wrap gap-[5rem] msm:grid">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="w-[300px] border-[#7e7e7e] border p-3 rounded-xl "
+              className="w-[300px] border-[#7e7e7e] border p-3 rounded-xl"
             >
               <p className="font-Poppins font-semibold text-[2.3rem]">
                 {project.project_name}
@@ -123,7 +120,6 @@ function ProjectsDisplay() {
                 style={{
                   background: project.image_bg,
                 }}
-                // onMouseLeave={onMouseLeave}
               >
                 <img
                   src={project.imageSrc}
