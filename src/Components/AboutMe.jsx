@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import resume from "../Assests/resume-sowrerajan.pdf";
+import resume from "../Assests/sowrerajan-resume.pdf";
 
 const AboutMe = () => {
   return (
