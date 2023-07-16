@@ -16,7 +16,7 @@ const AboutMe = () => {
               <span className="box-border inline-block w-1 h-10 ml-2 -mb-2 bg-black md:-mb-4 md:h-10 animate-cursor will-change-transform"></span>
             </h1>
             <div className="text-xl font-semibold md:text-3xl text-center">
-              developer by choice and designer for fun
+              developer by choice and designer for fun.
             </div>
           </header>
         </h2>
